@@ -1,0 +1,17 @@
+{
+	"name": "gulp-prettydiff",
+	"version": "1.0.0",
+	"description": "Transform Gulp streams with Pretty Diff.",
+	"main": "lib/index.js",
+	"keywords": [
+		"Gulp",
+		"Pretty Diff"
+	],
+	"author": "C. Spencer Beggs",
+	"license": "MIT",
+	"dependencies": {
+		"gulp-util": "^3.0.6",
+		"prettydiff": "^1.12.8",
+		"through2": "^2.0.0"
+	}
+}
