@@ -1,0 +1,77 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "Component": true,
+    "Fragment": true,
+    "PropTypes": true,
+    "autobind": true
+  },
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "tabWidth": 1,
+        "code": 125,
+        "ignoreStrings": true
+      }
+    ],
+    "experimentalDecorators": true,
+    "indent": [
+      "error",
+      "tab",
+      {
+        "FunctionDeclaration": {
+          "parameters": "first",
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": "first",
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "err"
+      }
+    ],
+    "semi": ["error", "always"],
+    "no-console": 0,
+    "no-fallthrough": 0,
+    "no-return-assign": 0,
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "no-extra-parens": [
+      2,
+      "all",
+      {
+        "ignoreJSX": "all",
+        "returnAssign": false,
+        "enforceForArrowConditionals": false
+      }
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ]
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended", "prettier"]
+}
